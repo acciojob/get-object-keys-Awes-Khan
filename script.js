@@ -2,4 +2,7 @@
 const student = {
 	name: "Awes Khan"
 }
-const getKeys = Object.keys(student);
+Object.prototype.getKeys = function() {
+  return Object.keys(this);
+};
+console.log(student.getKeys());
